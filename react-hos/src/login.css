@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f8fafc;
+}
+
+/* FULL PAGE SPLIT */
+.login-page {
+  display: flex;
+  height: 400px;
+  
+  
+}
+
+/* LEFT IMAGE SIDE */
+.login-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: white;
+  transition: transform 0.6s ease;
+}
+
+/* IMAGE ZOOM ON HOVER */
+.login-image:hover {
+  transform: scale(1.03);
+}
+
+.login-image h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.login-image p {
+  font-size: 16px;
+  max-width: 300px;
+}
+
+/* RIGHT LOGIN BOX */
+.loginbox {
+  flex: 1;
+  border-radius: 5px;
+  background: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* LOGIN BOX SCALE ON HOVER */
+.loginbox:hover {
+  transform: scale(1.04);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+label {
+    text-align: left;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.email,
+.password {
+  width: 200px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.showpass {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
