@@ -1,0 +1,151 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* PAGE LAYOUT */
+.login-page {
+  display: flex;
+  height: 100vh;
+  background: #f4f8fb;
+}
+
+/* LEFT IMAGE SECTION */
+.login-image {
+  flex: 1;
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image img {
+  width: 80%;
+  max-width: 420px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* IMAGE ANIMATION */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* RIGHT LOGIN BOX */
+.loginbox {
+  flex: 1;
+  background: #ffffff;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* HEADING */
+.heading {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #023e8a;
+  text-align: center;
+}
+
+/* LABELS */
+.loginbox label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+/* INPUTS */
+.loginbox input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.loginbox input:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 0 2px rgba(0, 119, 182, 0.15);
+}
+
+/* SHOW PASSWORD */
+.showpass {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.showpass input {
+  width: auto;
+}
+
+/* LOGIN BUTTON */
+.btn {
+  margin-top: 22px;
+  padding: 12px;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #023e8a;
+  transform: scale(1.02);
+}
+
+/* SIGNUP TEXT */
+.sign {
+  margin-top: 12px;
+  text-align: center;
+  color: #555;
+}
+
+.sign a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sign a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-image {
+    height: 35%;
+  }
+
+  .loginbox {
+    height: 65%;
+    padding: 30px;
+  }
+}
